@@ -6,7 +6,7 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-tierra-2021
 GitHub Branch:    master
-Version: v1.5.0
+Version: v1.6.0
 Template:		 generatepress
 Date:            20-03-2021
 Requires at least: 5.0
@@ -869,6 +869,6 @@ h6 {
 	h1{
 		color: red;
 		vertical-align: center;
-		padding-right: 20px;
+		padding-left: 20px;
 	}
 }
