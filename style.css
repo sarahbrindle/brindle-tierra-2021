@@ -6,9 +6,9 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-tierra-2021
 GitHub Branch:    master
-Version: v1.6.0
+Version: v1.7.0
 Template:		 generatepress
-Date:            20-03-2021
+Date:            30-03-2021
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -37,7 +37,7 @@ h2, h3 {
 }
 h2 em, h3 em {
 	font-family: 'Libre Baskerville', serif;
-	color: #bba49f;
+	/*color: #bba49f;*/
 	text-transform: lowercase;
 	letter-spacing: 1px;
 	display: block;
@@ -152,38 +152,28 @@ body.logged-in .site-header {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background: #bba49f;
-	color: #fff;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 16px;
 }
 .main-navigation .main-nav > ul > li.nav-btn a {
-	color: #FFF;
-	background: #bba49f;
 	height: 50px;
 	line-height: 50px;
 	padding: 0 38px;
 	font-size: 13px;
 	font-weight: 600;
 }
-.main-navigation .main-nav > ul > li.nav-btn a:hover, .main-navigation .main-nav > ul > li.nav-phone a:hover {
-	background: #535456;
-	color: #FFF;
-}
 .main-navigation .main-nav > ul > li.nav-phone-mobile {
 	display: none;
 }
-
 .menu-item-has-children .dropdown-menu-toggle {
-    padding-right: 0;
-    padding-left: 3px;
+	padding-right: 0;
+	padding-left: 3px;
 }
 .toggled .menu-item-has-children .dropdown-menu-toggle {
-    padding-left: 3px;
+	padding-left: 3px;
 }
-
 /* ==========================================================================
    content
    ========================================================================== */
@@ -334,35 +324,33 @@ body.logged-in .site-header {
 .insta-section .heading-highligh {
 	opacity: 0.53;
 	font-size: 90px;
-	line-height:1;
+	line-height: 1;
 }
- .contact-form .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]), .contact-form textarea {
+.contact-form .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]), .contact-form textarea {
 	padding: 10px 15px !important;
 	margin: 0!important;
 	width: 100%;
 	height: 46px;
 	border: solid 2px #C8C8C8;
 	color: #5b5c5e;
-	 background-color: transparent;
+	background-color: transparent;
 }
 .contact-form textarea {
 	height: 160px!important;
 }
-
-.gform_wrapper .gform_footer{
+.gform_wrapper .gform_footer {
 	padding-top: 0!important;
-	
 }
 
 @media (min-width: 641px) {
-	.gform_wrapper .gform_footer{
+.gform_wrapper .gform_footer {
 	padding-right: 16px!important;
 }
 }
+
 .contact-form input[type="submit"] {
-	background: #bba49f;
+	/*background: #bba49f;*/
 	border: 0;
-	color: #fff;
 	margin: 0!important;
 	display: block;
 	font-size: 13px;
@@ -372,28 +360,23 @@ body.logged-in .site-header {
 	cursor: pointer;
 	width: 100%!important;
 }
-.contact-form input[type="submit"]:hover {
-	background: #535456;
-}
+
 .contact-form .gfield_label, .contact-form .gform_fields .name_first label, .contact-form .gform_fields .name_last label {
 	display: none!important;
 }
-
- .contact-form .gform_wrapper .gfield_checkbox li input[type="checkbox"],  .contact-form  .gform_wrapper .gfield_radio li input[type="radio"] {
-
-    margin: 0;
-    margin-right: 5px;
+.contact-form .gform_wrapper .gfield_checkbox li input[type="checkbox"], .contact-form .gform_wrapper .gfield_radio li input[type="radio"] {
+	margin: 0;
+	margin-right: 5px;
 }
-
 ul.wp-block-social-links {
 	margin-left: -4px!important;
 	margin-right: -4px!important;
 }
-ul.wp-block-social-links li{
+ul.wp-block-social-links li {
 	padding: 0 4px!important;
 	margin: 0!important;
 }
-ul.wp-block-social-links li a{
+ul.wp-block-social-links li a {
 	padding: 0 !important;
 }
 /* ==========================================================================
@@ -472,16 +455,16 @@ ul.wp-block-social-links li a{
 	display: flex;
 	align-items: center;
 }
-.footer-bar .widget_media_image#media_image-8 img{opacity: .50;}
-.footer-bar .widget_media_image#media_image-8:before{
-	content: "|";
-margin: 0 5px;
+.footer-bar .widget_media_image#media_image-8 img {
+	opacity: .50;
 }
-
-.footer-bar .widget_media_image a:hover img{
+.footer-bar .widget_media_image#media_image-8:before {
+	content: "|";
+	margin: 0 5px;
+}
+.footer-bar .widget_media_image a:hover img {
 	opacity: 1;
 }
-
 .footer-widgets {
 	background-color: transparent;
 }
@@ -549,16 +532,11 @@ margin: 0 5px;
 	border: 0;
 	box-shadow: none;
 	border-radius: 0;
-	background: #bba49f !important;
-	color: #fff;
 	letter-spacing: 1px;
 	font-weight: 600;
 	margin: 0 !important;
 	cursor: pointer;
 	font-size: 12px !important;
-}
-.insta-section input[type="submit"]:hover {
-	background: #000 !important;
 }
 .insta-section .gform_wrapper .ginput_container {
 	margin: 0!important;
@@ -572,53 +550,45 @@ body .insta-section .gform_wrapper ul li.gfield {
 .insta-section .gform_wrapper div.validation_error {
 	display: none!important;
 }
-
-.copyright-bar{
-	display:none;
+.copyright-bar {
+	display: none;
 }
-
 .tp-button-wraper a {
-    color: #FFF;
-    background: #bba49f;
-    height: 46px;
-    line-height: normal;
-    padding: 0 38px;
-    font-weight: 600;
+	height: 46px;
+	line-height: normal;
+	padding: 0 38px;
+	font-weight: 600;
 	font-size: 14px;
-	border:solid 1px #bba49f;
 	text-transform: uppercase;
 	display: inline-flex;
-	align-items:center;
+	align-items: center;
 	letter-spacing: 0.1em;
 }
-.tp-button-wraper a:hover{
-	background: #fff;
-	color: #bba49f;
-}
-.top-bar .textwidget p{
+.top-bar .textwidget p {
 	display: flex;
 	align-items: center;
 	text-align: center;
 }
 .top-bar .textwidget strong {
-    text-transform: uppercase;
-    color: #bba49f;
-    font-size: 22px;
-    font-weight: normal;
-    max-width: 170px;
-    text-align: right;
-    line-height: 1.2;
+	text-transform: uppercase;
+	color: #bba49f;
+	font-size: 22px;
+	font-weight: normal;
+	max-width: 170px;
+	text-align: right;
+	line-height: 1.2;
 	vertical-align: middle;
 	display: flex;
 	align-items: center;
 }
 .top-bar .textwidget strong:after {
-    content: "";
-    width: 1px;
-    height: 20px;
-    background: #474747;
-    margin: 0 20px;
+	content: "";
+	width: 1px;
+	height: 20px;
+	background: #474747;
+	margin: 0 20px;
 }
+
 /*--------------------------------------   MEDIA STYLES  -------------------------**/
 /* Large desktop */
 
@@ -629,7 +599,6 @@ body .insta-section .gform_wrapper ul li.gfield {
 }
 
 @media (max-width: 1200px) {
-
 .site-header {
 	height: 98px;
 }
@@ -816,39 +785,42 @@ h6 {
 .luxury-living-section.gb-container > .gb-inside-container {
 	padding-right: 20px;
 }
-	
-.insta-section .gform_wrapper{
-    padding: 25px 30px;
-}	
-	.insta-section .gform_wrapper form{
-		padding: 0;
-	}	
-	.insta-section .gform_wrapper .gform_footer {
-    position: inherit;
-    right: auto;
-    top: auto;
-    margin: 20px auto 0 !important;
+.insta-section .gform_wrapper {
+	padding: 25px 30px;
 }
-	.top-bar .textwidget p {
-    display: block;
-    align-items: center;
+.insta-section .gform_wrapper form {
+	padding: 0;
 }
-	.top-bar .textwidget strong{max-width: none;
+.insta-section .gform_wrapper .gform_footer {
+	position: inherit;
+	right: auto;
+	top: auto;
+	margin: 20px auto 0 !important;
+}
+.top-bar .textwidget p {
 	display: block;
-	text-align: center;}
-	.top-bar .textwidget strong::after {
-    width: 100%;
-    height: 1px;
-    margin: 4px 0;
-    display: block;
+	align-items: center;
 }
-	.top-bar .inside-top-bar {
-    flex-direction: column;
+.top-bar .textwidget strong {
+	max-width: none;
+	display: block;
+	text-align: center;
 }
-	.tp-button-wraper{
-		margin-top: 15px;
-	}
-	.tp-button-wraper a{height: 40px;}
+.top-bar .textwidget strong::after {
+	width: 100%;
+	height: 1px;
+	margin: 4px 0;
+	display: block;
+}
+.top-bar .inside-top-bar {
+	flex-direction: column;
+}
+.tp-button-wraper {
+	margin-top: 15px;
+}
+.tp-button-wraper a {
+	height: 40px;
+}
 }
 
 /*-------------------------------------------- */	
@@ -859,16 +831,60 @@ h6 {
 -------------------------------------------- */	
 
 @media (max-width: 320px) {
-	.invalidclass{
-		background-color: #ffffff;
-	}
-	.extraclass{
-		color: red;
-		font-size: 10px;
-	}
-	h1{
-		color: red;
-		vertical-align: center;
-		padding-left: 20px;
-	}
+.invalidclass {
+	background-color: #ffffff;
+}
+.extraclass {
+	color: red;
+	font-size: 10px;
+}
+h1 {
+	color: red;
+	vertical-align: center;
+	padding-left: 20px;
+}
+}
+/* --------------------------------------------
+Custome css
+-------------------------------------------- */	
+
+/*
+.tp-button-wraper a {
+	color: #FFF;
+	background: #bba49f;
+}
+.tp-button-wraper a:hover {
+	background: #fff;
+	color: #bba49f;
+}
+.main-navigation .main-nav > ul > li.nav-btn a {
+	background-color: #bba49f;
+	color: #FFF;
+}
+.main-navigation .main-nav > ul > li.nav-phone a {
+	background-color: #bba49f;
+	color: #fff;
+}
+
+
+
+.main-navigation .main-nav > ul > li.nav-btn a:hover, .main-navigation .main-nav > ul > li.nav-phone a:hover {
+	background: #535456;
+	color: #FFF;
+}
+
+.insta-section input[type="submit"] {
+	background: #bba49f !important;
+	color: #fff;
+}
+.contact-form input[type="submit"]{
+	background: #bba49f;
+	color: #fff;
+}*/
+.insta-section input[type="submit"]:hover {
+	background: #000 !important;
+	color: #fff;
+}
+.contact-form input[type="submit"]:hover {
+	background: #535456;
 }

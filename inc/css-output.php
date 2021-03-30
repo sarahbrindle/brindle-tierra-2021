@@ -23,12 +23,9 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 
 		$css = new GeneratePress_CSS();
 
-		$css->set_selector( 'body' );
-		$css->add_property( 'background-color', $settings['background_color'] );
-		$css->add_property( 'color', $settings['text_color'] );
-
-		$css->set_selector( 'h1' );
-		$css->add_property( 'color', $settings['title_color'] );
+		include('css-output-new.php');
+		
+		
 
 		$css->set_selector( 'a' );
 		$css->add_property( 'color', $settings['link_color'] );

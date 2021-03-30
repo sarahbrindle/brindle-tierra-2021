@@ -225,6 +225,11 @@ if ( ! function_exists( 'generate_customize_register' ) ) {
 			)
 		);
 
+		//////////
+
+		require_once 'customizer-extra.php';
+
+		////////////////
 		$wp_customize->add_section(
 			'body_section',
 			array(
@@ -278,28 +283,11 @@ if ( ! function_exists( 'generate_customize_register' ) ) {
 				)
 			)
 		);
-		$wp_customize->add_setting(
-			'generate_settings[title_color]',
-			array(
-				'default' => $defaults['title_color'],
-				'type' => 'option',
-				'sanitize_callback' => 'generate_sanitize_hex_color',
-				'transport' => 'refresh',
-			)
-		);
 
-		$wp_customize->add_control(
-			new WP_Customize_Color_Control(
-				$wp_customize,
-				'generate_settings[title_color]',
-				array(
-					'label' => __( 'Title Color', 'generatepress' ),
-					'section' => 'body_section',
-					'settings' => 'generate_settings[title_color]',
-				)
-			)
-		);
+		
 
+		
+		
 		$wp_customize->add_setting(
 			'generate_settings[link_color]',
 			array(

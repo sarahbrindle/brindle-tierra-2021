@@ -37,7 +37,7 @@ h2.resp-accordion {
 
 
 .resp-tab-active, .resp-tab-item:hover {
-  color: #bba49f;
+ /** color: #bba49f;**/
 }
 
 .resp-content-active,
