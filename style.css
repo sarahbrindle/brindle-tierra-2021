@@ -341,7 +341,7 @@ body.logged-in .site-header {
 .gform_wrapper .gform_footer {
 	padding-top: 0!important;
 }
-.main-navigation .main-nav > ul > li.current-menu-item a:hover{
+.main-navigation .main-nav ul li.nav-btn[class*="current-menu-"] > a:hover{
 	background: #aaaaaa;
 }
 

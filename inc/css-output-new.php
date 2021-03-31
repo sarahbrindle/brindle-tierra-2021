@@ -13,7 +13,7 @@
 		$css->add_property( 'background-color', $settings['common_primary_color'] );
 		$css->add_property( 'color', '#FFFFFF' );
 
-		$css->set_selector( '.main-navigation .main-nav > ul > li.current-menu-item a:hover');
+		$css->set_selector( '.main-navigation .main-nav ul li.nav-btn[class*="current-menu-"] > a:hover');
 		$css->add_property( 'background-color', $settings['common_primary_color'] );
 		$css->add_property( 'background', $settings['common_primary_color'] );		
 		$css->add_property( 'color', '#FFFFFF' );
