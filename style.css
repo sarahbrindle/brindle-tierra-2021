@@ -6,9 +6,9 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-tierra-2021
 GitHub Branch:    master
-Version: v1.7.0
+Version: v1.7.1
 Template:		 generatepress
-Date:            30-03-2021
+Date:            31-03-2021
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -30,7 +30,7 @@ Text Domain:	 brindle-tierra
    General
    ========================================================================== */
 body {
-	background-color: #fff;
+	/*background-color: #fff;*/
 }
 h2, h3 {
 	letter-spacing: 2px;
@@ -99,7 +99,7 @@ body.logged-in .site-header {
 	top: 32px;
 }*/
 .site-header {
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 	z-index: 9999;
 	width: 100%;
 	top: 0;
@@ -128,7 +128,7 @@ body.logged-in .site-header {
 	align-items: center;
 }
 .main-navigation .main-nav > ul > li {
-	color: #535455;
+	/*color: #535455;*/
 	position: relative;
 }
 .main-navigation .main-nav > ul > li + li {
@@ -145,9 +145,9 @@ body.logged-in .site-header {
 	line-height: normal;
 	white-space: nowrap;
 }
-.main-navigation .main-nav > ul > li > a:hover, .main-navigation .main-nav > ul > li.current-menu-item > a, .main-navigation .main-nav > ul > li:hover, .main-navigation .main-nav > ul > li:hover > a {
+/*.main-navigation .main-nav > ul > li > a:hover, .main-navigation .main-nav > ul > li.current-menu-item > a, .main-navigation .main-nav > ul > li:hover, .main-navigation .main-nav > ul > li:hover > a {
 	color: #bba49f;
-}
+}*/
 .main-navigation .main-nav > ul > li.nav-phone a {
 	width: 30px;
 	height: 30px;
@@ -332,7 +332,7 @@ body.logged-in .site-header {
 	width: 100%;
 	height: 46px;
 	border: solid 2px #C8C8C8;
-	color: #5b5c5e;
+	/*color: #5b5c5e;*/
 	background-color: transparent;
 }
 .contact-form textarea {
@@ -340,6 +340,9 @@ body.logged-in .site-header {
 }
 .gform_wrapper .gform_footer {
 	padding-top: 0!important;
+}
+.main-navigation .main-nav > ul > li.current-menu-item a:hover{
+	background: #aaaaaa;
 }
 
 @media (min-width: 641px) {
@@ -383,9 +386,9 @@ ul.wp-block-social-links li a {
    Footer
    ========================================================================== */
 .site-footer {
-	background: #000000;
+	/*background: #000000;*/
 	padding: 100px 0 0 0;
-	color: #FFF;
+	/*color: #FFF;*/
 }
 .footer-widgets .widget {
 	line-height: 2.2;
@@ -411,18 +414,18 @@ ul.wp-block-social-links li a {
 	color: inherit;
 }
 .menu-footer-menu-container ul li a:hover {
-	color: #bba49f;
+	/*color: #bba49f;*/
 }
-.site-footer #simple-social-icons-4 ul li a {
+.site-footer .simple-social-icons ul li a {
 	background-color: transparent !important;
 	font-size: 20px!important;
 	padding: 0!important;
 	width: auto;
 	height: auto;
 }
-.site-footer #simple-social-icons-4 ul li a:hover, .site-footer #simple-social-icons-4 ul li a:focus {
+.site-footer .simple-social-icons ul li a:hover, .site-footer .simple-social-icons ul li a:focus {
 	background-color: transparent !important;
-	color: #bba49f !important;
+	/*color: #bba49f !important;*/
 }
 .footer-bar {
 	display: flex;
@@ -466,20 +469,20 @@ ul.wp-block-social-links li a {
 	opacity: 1;
 }
 .footer-widgets {
-	background-color: transparent;
+	/*background-color: transparent;*/
 }
 .site-info {
-	background-color: transparent;
+	/*background-color: transparent;*/
 	font-weight: 400;
 	letter-spacing: 0.36px;
-	color: #787878;
+	/*color: #787878;*/
 	font-size: 12px;
 }
 .site-info a {
 	color: inherit;
 }
 .site-info a:hover {
-	color: #bba49f;
+/*	color: #bba49f;*/
 }
 .inside-site-info {
 	padding-top: 0;
@@ -571,7 +574,7 @@ body .insta-section .gform_wrapper ul li.gfield {
 }
 .top-bar .textwidget strong {
 	text-transform: uppercase;
-	color: #bba49f;
+	/*color: #bba49f;*/
 	font-size: 22px;
 	font-weight: normal;
 	max-width: 170px;
@@ -649,9 +652,9 @@ hr.divider {
 	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
 }
-.mobile-menu-control-wrapper .menu-toggle, .mobile-menu-control-wrapper .menu-toggle:hover, .mobile-menu-control-wrapper .menu-toggle:focus, .has-inline-mobile-toggle #site-navigation.toggled {
+/*.mobile-menu-control-wrapper .menu-toggle, .mobile-menu-control-wrapper .menu-toggle:hover, .mobile-menu-control-wrapper .menu-toggle:focus, .has-inline-mobile-toggle #site-navigation.toggled {
 	background-color: #bba49f;
-}
+}*/
 .mobile-menu-control-wrapper {
 	margin-right: 20px;
 }
@@ -660,7 +663,7 @@ hr.divider {
 	line-height: normal;
 }
 button.menu-toggle, button.menu-toggle:hover, button.menu-toggle:focus {
-	color: #fff;
+	/*color: #fff;*/
 }
 .main-navigation .main-nav > ul > li {
 	border-top: solid 1px #F1F1F1;
@@ -832,10 +835,10 @@ h6 {
 
 @media (max-width: 320px) {
 .invalidclass {
-	background-color: #ffffff;
+	/*background-color: #ffffff;*/
 }
 .extraclass {
-	color: red;
+	/*color: red;*/
 	font-size: 10px;
 }
 h1 {
@@ -882,9 +885,9 @@ Custome css
 	color: #fff;
 }*/
 .insta-section input[type="submit"]:hover {
-	background: #000 !important;
-	color: #fff;
+	/*background: #000 !important;
+	color: #fff;*/
 }
 .contact-form input[type="submit"]:hover {
-	background: #535456;
+	/*background: #535456;*/
 }
