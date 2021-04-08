@@ -6,9 +6,9 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-tierra-2021
 GitHub Branch:    master
-Version: v1.7.3
+Version: v1.7.4
 Template:		 generatepress
-Date:            03-04-2021
+Date:            08-04-2021
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -590,6 +590,15 @@ body .insta-section .gform_wrapper ul li.gfield {
 	height: 20px;
 	background: #474747;
 	margin: 0 20px;
+}
+
+/*=============tour-page-grid==============*/
+.gb-grid-wrapper.virtual-tour-block{
+    padding-top: 30px;
+    border-bottom: 2px solid rgba(0,0,0,.15);
+}
+.gb-grid-wrapper.virtual-tour-block:last-child{
+    border-bottom: 0;
 }
 
 /*--------------------------------------   MEDIA STYLES  -------------------------**/

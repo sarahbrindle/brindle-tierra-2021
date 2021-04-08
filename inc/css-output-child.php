@@ -22,6 +22,8 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		$common_primary_color    = $common_primary_color." !important";
 		$common_secondary_color  = $common_secondary_color." !important";
 		$common_button_color     = $common_button_color." !important";
+
+		$common_primary_color_notimp    = $settings['common_primary_color'];
 		
 		$css->set_selector( 'body' );
 		$css->add_property( 'background-color', $settings['content_background_color'] );
@@ -61,7 +63,7 @@ if ( ! function_exists( 'generate_base_css' ) ) {
 		
 
 		$css->set_selector( 'h1, h2, h3' );
-		$css->add_property( 'color', $common_primary_color );
+		$css->add_property( 'color', $common_primary_color_notimp );
 
 		$css->set_selector( 'h2 em, h3 em' );
 		$css->add_property( 'color', $common_secondary_color );
