@@ -1,4 +1,13 @@
 <?php
+/**
+ * Builds our Customizer Extra Child Theme Controls.
+ *
+ * @package GeneratePress
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 add_action( 'customize_register', 'child_generate_set_customizer_helpers', 1 );
 /**
  * Set up helpers early so they're always available.
@@ -10,14 +19,14 @@ function child_generate_set_customizer_helpers() {
 	require_once trailingslashit( get_template_directory() ) . 'inc/customizer/customizer-helpers.php';
 }
 
-if ( ! function_exists( 'generate_customize_register' ) ) {
-	add_action( 'customize_register', 'generate_customize_register' );
+if ( ! function_exists( 'child_generate_customize_register' ) ) {
+	add_action( 'customize_register', 'child_generate_customize_register' );
 	/**
 	 * Add our base options to the Customizer.
 	 *
 	 * @param WP_Customize_Manager $wp_customize Theme Customizer object.
 	 */
-	function generate_customize_register( $wp_customize ) {
+	function child_generate_customize_register( $wp_customize ) {
 		$defaults = generate_get_defaults();
 		require_once trailingslashit( get_template_directory() ) . 'inc/customizer/customizer-helpers.php';
 
