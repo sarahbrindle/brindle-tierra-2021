@@ -17,7 +17,7 @@ add_action( 'wp_enqueue_scripts', 'your_theme_js' );
 
 // Includes color stuff
 require_once get_stylesheet_directory() . '/inc/defaults-child.php';
-require_once get_stylesheet_directory() . '/inc/customizer-child.php';
+//require_once get_stylesheet_directory() . '/inc/customizer-child.php';
 require_once get_stylesheet_directory() . '/inc/css-output-child.php';
 
 
@@ -34,6 +34,11 @@ function my_scripts_method() {
 }
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 
+add_action( 'wp_enqueue_scripts', function() {
+
+    wp_enqueue_style( 'dashicons' );
+
+} );
 
 add_theme_support('editor-styles');
 add_action( 'enqueue_block_editor_assets', function() {
