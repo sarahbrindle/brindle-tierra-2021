@@ -84,12 +84,14 @@ return $year;
 }
 add_shortcode ('year', 'year_shortcode');
 
+
+// Updater
 require 'vendor/plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
   'https://github.com/sarahbrindle/brindle-tierra-2021/',
   __FILE__,
-  'brindle-tierra'
+  'brindle-tierra-2021'
 );
 
 // Optional: Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('main');
+$myUpdateChecker->setBranch('master');
