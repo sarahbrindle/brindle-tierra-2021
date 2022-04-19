@@ -6,9 +6,9 @@ Author: Brindle Digital
 Author URI: https://www.brindledigital.com/
 GitHub Theme URI: https://github.com/sarahbrindle/brindle-tierra-2021
 GitHub Branch:    master
-Version: v1.7.7
+Version: v1.7.8
 Template:		 generatepress
-Date:            23-03-2022
+Date:            19-04-2022
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.0
@@ -351,12 +351,14 @@ body.logged-in .site-header {
 }
 
 /* florrplab start*/
+/*
 body .floorplangrid h3.floorplangrid__title{
     font-weight: 700;
 }
 body .floorplangrid__rent_range .rent_range{
     font-weight: 700;
 }
+*/
 body .floorplans.type-floorplans{
     box-shadow: 0 0 12px rgba(0,0,0,.2);
 }

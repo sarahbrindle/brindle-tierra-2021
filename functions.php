@@ -3,7 +3,6 @@
 add_action( 'wp_enqueue_scripts', 'brindle_tierra_enqueue_styles' );
 function brindle_tierra_enqueue_styles() {
   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' ); 
-
   wp_enqueue_style( 'easy-responsive-tabs', get_stylesheet_directory_uri() . '/assets/css/easy-responsive-tabs.css' ); 
 
 } 
@@ -11,33 +10,18 @@ function brindle_tierra_enqueue_styles() {
 function your_theme_js() {
     wp_enqueue_script( 'easy-responsive-tabs', get_stylesheet_directory_uri() . '/assets/js/easy-responsive-tabs.js', array( 'jquery' ), '1.0', true );
 	wp_enqueue_script( 'jquery-scrolltofixed', get_stylesheet_directory_uri() . '/assets/js/jquery-scrolltofixed-min.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script('custom_script',get_stylesheet_directory_uri() . '/assets/js/all.min.js',array('jquery'),'1.0',true);
 	wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/assets/js/script.js', array( 'jquery' ), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'your_theme_js' );
 
 // Includes color stuff
-require_once get_stylesheet_directory() . '/inc/defaults-child.php';
-//require_once get_stylesheet_directory() . '/inc/customizer-child.php';
 require_once get_stylesheet_directory() . '/inc/css-output-child.php';
 
 
 
-function my_scripts_method() {
-   // register your script location, dependencies and version
-   wp_register_script('custom_script',
-       get_stylesheet_directory_uri() . '/assets/js/all.min.js',
-       array('jquery'),
-       '1.0',
-       true);
-   // enqueue the script
-   wp_enqueue_script('custom_script');
-}
-add_action('wp_enqueue_scripts', 'my_scripts_method');
-
 add_action( 'wp_enqueue_scripts', function() {
-
     wp_enqueue_style( 'dashicons' );
-
 } );
 
 add_theme_support('editor-styles');
@@ -83,15 +67,3 @@ $year = date_i18n ('Y');
 return $year;
 }
 add_shortcode ('year', 'year_shortcode');
-
-
-// Updater
-require 'vendor/plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-  'https://github.com/sarahbrindle/brindle-tierra-2021/',
-  __FILE__,
-  'brindle-tierra-2021'
-);
-
-// Optional: Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('master');
