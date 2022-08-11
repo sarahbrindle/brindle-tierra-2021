@@ -46,7 +46,7 @@ Text Domain:	 brindle-tierra
     font-display: swap;
 }
 @font-face {
-    font-family: 'Univers LT Std';
+    font-family: 'Univers LT Std Bold';
     src: url('assets/fonts/UniversLTStd-Bold.eot');
     src: url('assets/fonts/UniversLTStd-Bold.eot?#iefix') format('embedded-opentype'),
         url('assets/fonts/UniversLTStd-Bold.woff2') format('woff2'),
@@ -57,6 +57,7 @@ Text Domain:	 brindle-tierra
     font-style: normal;
     font-display: swap;
 }
+
 /* ==========================================================================
    Font Face
    ========================================================================== */

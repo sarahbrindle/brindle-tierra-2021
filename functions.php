@@ -67,3 +67,15 @@ $year = date_i18n ('Y');
 return $year;
 }
 add_shortcode ('year', 'year_shortcode');
+
+add_filter( 'generate_number_of_fonts','tu_show_all_available_google_fonts' );
+function tu_show_all_available_google_fonts() {
+    return 'all';
+}
+add_filter( 'generate_typography_default_fonts', function( $fonts ) {
+    $fonts[] = 'Univers LT Std';
+    $fonts[] = 'Didot LT Std';
+    $fonts[] = 'Univers LT Std Bold';
+
+    return $fonts;
+} );
