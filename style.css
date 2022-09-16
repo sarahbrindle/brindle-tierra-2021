@@ -471,11 +471,11 @@ body.logged-in .site-header {
 .gform_wrapper .gform_footer {
     padding-top: 0 !important;
 }
-
+/*
 .main-navigation .main-nav ul li.nav-btn[class*="current-menu-"] > a:hover {
     background: #aaaaaa;
 }
-
+*/
 /* florrplab start*/
 /*
 body .floorplangrid h3.floorplangrid__title{

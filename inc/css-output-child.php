@@ -72,9 +72,9 @@
 			$css->add_property( 'background-color', $generate_settings['form_button_background_color_hover'] );
 			$css->add_property( 'color', $generate_settings['form_button_text_color_hover'] );
 
-			$css->set_selector( 'body .site-header .main-navigation .main-nav ul li:last-child[class*="current-menu-"] > a' );
-			$css->add_property( 'background-color', $generate_settings['form_button_background_color_hover'] );
-			$css->add_property( 'color', $generate_settings['form_button_text_color_hover'] );
+			//$css->set_selector( 'body .site-header .main-navigation .main-nav ul li:last-child[class*="current-menu-"] > a' );
+			//$css->add_property( 'background-color', $generate_settings['form_button_background_color_hover'] );
+			//$css->add_property( 'color', $generate_settings['form_button_text_color_hover'] );
 
 			/*Header Active Menu Border*/
 			$css->set_selector( 'body .site-header .main-navigation .main-nav ul li[class*="current-menu-"] > a::after' );
