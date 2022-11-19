@@ -1164,6 +1164,9 @@ body .insta-section .gform_wrapper ul li.gfield {
     .tp-button-wraper a {
         height: 40px;
     }
+    .footer-bar{
+        gap: 10px;
+    }
 }
 
 /*-------------------------------------------- */

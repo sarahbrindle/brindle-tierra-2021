@@ -50,7 +50,7 @@
 
 			/*Header Navigation*/
 			$css->set_selector( 'body .main-navigation .main-nav ul.sub-menu li:last-child a' );
-			$css->add_property( 'color', $form_button_text_color);
+			$css->add_property( 'color', $generate_settings['subnavigation_text_color'].'!important' );
 			$css->add_property( 'background-color', $generate_settings['subnavigation_background_color']);
 
 			$css->set_selector( 'body .main-navigation .main-nav ul.sub-menu li:last-child a:hover' );
