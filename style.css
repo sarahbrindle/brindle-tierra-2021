@@ -493,6 +493,10 @@ body .floorplans.type-floorplans {
 body .floorplangrid a.button {
     text-align: center;
 }
+.floorplangrid-wrap {
+  grid-template-columns: repeat(auto-fill, minmax(313px, 1fr)) !important;
+}
+ul.filters {  margin-left: 0; }
 
 /* floorplan end */
 
